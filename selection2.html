@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sports Team Selection Form</title>
+
+<style>
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    margin:0;
+}
+
+.container{
+    width:400px;
+    margin:50px auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    color:white;
+    margin-top:30px;
+}
+
+.container h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+label{
+    font-weight:600;
+}
+
+input,select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+.gender{
+    display:flex;
+    gap:20px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#667eea;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#5a67d8;
+    transform:scale(1.02);
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Sports Team Selection</h1>
+
+<div class="container">
+<h2>Registration Form</h2>
+
+<form action="certificate.html" method="GET">
+
+<label>Full Name</label>
+<input type="text" name="name" required>
+
+<label>Age</label>
+<input type="number" name="age" required>
+
+<label>Gender</label>
+<div class="gender">
+<label><input type="radio" name="gender" value="Male"> Male</label>
+<label><input type="radio" name="gender" value="Female"> Female</label>
+</div>
+
+<label>Select Sport</label>
+<select name="sport">
+<option>Cricket</option>
+<option>Football</option>
+<option>Basketball</option>
+<option>Volleyball</option>
+<option>Badminton</option>
+</select>
+
+<label>Position</label>
+<input type="text" name="position">
+
+<label>Contact Number</label>
+<input type="tel" name="phone">
+
+<button type="submit">Submit Form</button>
+
+</form>
+</div>
+
+</body>
+</html>
