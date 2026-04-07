@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Team Selection - Home</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            color: white;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            font-size: 28px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            color: #ffd369;
+        }
+
+        .hero{
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content{
+            max-width: 800px;
+        }
+
+        .hero h2{
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero p{
+            font-size: 20px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: 14px 30px;
+            background: #ffd369;
+            color: black;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover{
+            background: white;
+            transform: scale(1.05);
+        }
+
+        .features{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 50px 20px;
+            background: rgba(255,255,255,0.08);
+        }
+
+        .card{
+            background: white;
+            color: black;
+            width: 280px;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-8px);
+        }
+
+        .card h3{
+            margin-bottom: 15px;
+            color: #c33764;
+        }
+
+        .about{
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2{
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .about p{
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        footer{
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.25);
+            margin-top: 30px;
+        }
+
+        @media(max-width: 768px){
+            header{
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            .hero h2{
+                font-size: 38px;
+            }
+
+            .hero p{
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sports Team Selection</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="selection2.html">Register</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Sports Team Selection Portal</h2>
+            <p>
+                Join your favorite sports team by filling out the registration form
